@@ -154,9 +154,6 @@ class CoderGuiltScanner:
         file_metrics: Dict[str, FileGuiltMetrics] = {}
 
         # Scan all code files
-        for root, _, files in self.repo_path.rglob('*'):
-            pass  # rglob handles this
-
         for filepath in self.repo_path.rglob('*'):
             if not filepath.is_file():
                 continue
