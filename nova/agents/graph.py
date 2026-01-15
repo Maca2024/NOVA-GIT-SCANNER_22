@@ -1,11 +1,13 @@
 """
 🔄 THE RALPH LOOP - LangGraph Implementation
-The gatekeeper that ensures quality analysis.
+AETHERBOT POWERED BY AETHERLINK
+The gatekeeper that ensures quality analysis with deep memory and agentic intelligence.
 """
 
 import os
 import json
 from datetime import datetime
+from pathlib import Path
 from typing import Dict, Any, Optional, List, Literal
 from dataclasses import asdict
 
@@ -16,6 +18,30 @@ from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 from .state import NovaState, ScanResults, AnalysisReport, SeverityLevel
 from ..scanners import CodeRotScanner, CoderGuiltScanner, SecurityScanner, PerformanceScanner
 
+# AETHERBOT Integration
+from ..aetherbot import AetherMemory, MemoryType, AetherBrain, SmartRalphCritic
+from ..aetherbot.memory import AnalysisRecord
+
+# Global AETHERBOT instances (shared across the pipeline)
+_aether_brain: Optional[AetherBrain] = None
+_smart_ralph: Optional[SmartRalphCritic] = None
+
+
+def get_aether_brain() -> AetherBrain:
+    """Get or create the global AetherBrain instance."""
+    global _aether_brain
+    if _aether_brain is None:
+        _aether_brain = AetherBrain()
+    return _aether_brain
+
+
+def get_smart_ralph() -> SmartRalphCritic:
+    """Get or create the global SmartRalphCritic instance."""
+    global _smart_ralph
+    if _smart_ralph is None:
+        _smart_ralph = SmartRalphCritic(brain=get_aether_brain())
+    return _smart_ralph
+
 
 # ============================================================================
 # SCANNER AGENT NODE
@@ -23,11 +49,28 @@ from ..scanners import CodeRotScanner, CoderGuiltScanner, SecurityScanner, Perfo
 
 def scanner_agent(state: NovaState) -> NovaState:
     """
-    🔬 SCANNER AGENT
-    Runs all Python forensic tools and collects raw data.
+    🔬 SCANNER AGENT (AETHERBOT Enhanced)
+    Runs all Python forensic tools with intelligent strategy selection.
+    Uses AetherBrain for strategic planning and memory for context.
     """
     repo_path = state["repo_path"]
     repo_name = state.get("repo_name", os.path.basename(repo_path))
+
+    # AETHERBOT: Analyze repository and determine strategy
+    brain = get_aether_brain()
+    repo_analysis = brain.analyze_repository(Path(repo_path))
+    strategy = brain.determine_strategy(repo_analysis)
+
+    # Remember this scan in short-term memory
+    brain.memory.remember(
+        content=f"Starting scan of {repo_name} with strategy: {strategy.get('scan_depth', 'full')}",
+        memory_type=MemoryType.SHORT_TERM,
+        metadata={"repo": repo_name, "strategy": strategy},
+        importance=0.5
+    )
+
+    # Assign scanner agent in brain
+    brain.assign_agent(brain.agents[list(brain.agents.keys())[0]].role, f"Scanning {repo_name}")
 
     scan_results = {
         "repo_name": repo_name,
@@ -317,80 +360,105 @@ def analyst_agent(state: NovaState) -> NovaState:
 
 
 # ============================================================================
-# RALPH NODE (THE CRITIC)
+# RALPH NODE (THE CRITIC) - AETHERBOT ENHANCED
 # ============================================================================
 
 def ralph_critic(state: NovaState) -> NovaState:
     """
-    🎭 RALPH - THE CRITIC
-    Validates the analysis report for quality and specificity.
+    🎭 SMART RALPH - THE INTELLIGENT CRITIC
+    AETHERBOT Enhanced validation with deep memory and learning.
     """
     analysis = state.get("analysis_report", {})
     scan_results = state.get("scan_results", {})
     iteration = state.get("critique_iteration", 0)
-    max_iterations = 3
 
-    issues = []
-    suggestions = []
+    # Get SmartRalphCritic
+    smart_ralph = get_smart_ralph()
+    brain = get_aether_brain()
 
-    # Check 1: Did the Analyst cite specific file paths?
-    def has_file_paths(section: Dict) -> bool:
-        section_str = json.dumps(section)
-        # Look for common file path patterns
-        return any(ext in section_str for ext in ['.py', '.js', '.ts', '.java', '.go', '/', '\\'])
+    # Prepare repo info for adaptive thresholds
+    repo_info = None
+    repo_path = state.get("repo_path")
+    if repo_path:
+        repo_info = brain.analyze_repository(Path(repo_path))
 
+    # Run smart validation
+    validation_report = smart_ralph.validate(
+        results={
+            **scan_results,
+            "analysis": analysis
+        },
+        repo_info=repo_info
+    )
+
+    # Get iteration guidance
+    guidance = smart_ralph.get_iteration_guidance(validation_report)
+
+    # Convert to legacy format for compatibility
+    issues = [c.message for c in validation_report.criticisms if c.severity in ["error", "critical"]]
+    suggestions = [c.message for c in validation_report.criticisms if c.severity in ["warning", "info"]]
+
+    # Also run legacy checks for backwards compatibility
     if "graveyard" in analysis:
         if not analysis["graveyard"].get("abandoned_files") and scan_results.get("code_rot", {}).get("abandoned_files"):
-            issues.append("Graveyard section missing abandoned file citations despite scan data showing them")
+            if "abandoned file" not in " ".join(issues).lower():
+                issues.append("Graveyard section missing abandoned file citations despite scan data showing them")
 
     if "confessional" in analysis:
         if not analysis["confessional"].get("god_classes") and scan_results.get("coder_guilt", {}).get("god_classes"):
-            issues.append("Confessional section missing god class citations")
+            if "god class" not in " ".join(issues).lower():
+                issues.append("Confessional section missing god class citations")
 
-    # Check 2: Is Code Rot backed by dates?
-    if "graveyard" in analysis:
-        graveyard_str = json.dumps(analysis["graveyard"])
-        if scan_results.get("code_rot", {}).get("abandoned_files"):
-            if not any(word in graveyard_str.lower() for word in ["day", "month", "year", "stale", "ago"]):
-                issues.append("Code Rot findings should mention staleness duration (days/months)")
-
-    # Check 3: Is Security validated against scan data?
     if "fortress" in analysis:
         fortress = analysis["fortress"]
         scan_security = scan_results.get("security", {})
-
-        # If scan found secrets but report doesn't mention them
         if scan_security.get("secret_leaks") and not fortress.get("open_wounds"):
-            issues.append("Security section should address the detected secret leaks")
+            if "secret" not in " ".join(issues).lower():
+                issues.append("Security section should address the detected secret leaks")
 
-        # If scan found SQL injection but report doesn't mention
-        if scan_security.get("sql_injections") and "sql" not in json.dumps(fortress).lower():
-            issues.append("Security section should address SQL injection findings")
-
-    # Check 4: Ensure transmutation section is actionable
-    if "transmutation" in analysis:
-        trans = analysis["transmutation"]
-        if not trans.get("refactor_steps") or len(trans.get("refactor_steps", [])) < 3:
-            suggestions.append("Transmutation section should have at least 3 specific refactor steps")
-
-        if not trans.get("sacred_yes") or len(trans.get("sacred_yes", "")) < 50:
-            suggestions.append("Sacred Yes should be more detailed about the codebase's potential")
-
-    # Check 5: Severity and entropy must be present
+    # Severity and entropy must be present
     if "severity_level" not in analysis:
         issues.append("Missing severity_level classification")
     if "entropy_score" not in analysis:
         issues.append("Missing entropy_score")
 
-    # Determine pass/fail
-    passed = len(issues) == 0 or iteration >= max_iterations - 1
+    # Smart decision on whether to continue
+    should_continue, reason = smart_ralph.should_continue(validation_report)
+
+    # Brain evaluates quality and decides
+    quality_score, assessment = brain.evaluate_quality(scan_results)
+    should_iterate, iterate_reason = brain.should_iterate(quality_score, iteration)
+
+    # Combine smart decisions
+    passed = not should_continue or not should_iterate
+    if iteration >= smart_ralph.max_iterations - 1:
+        passed = True  # Force pass on max iterations
+
+    # Remember this critique in memory
+    brain.memory.remember(
+        content=f"Ralph critique iteration {iteration + 1}: {'PASS' if passed else 'FAIL'} - Score: {validation_report.score:.2f}",
+        memory_type=MemoryType.SHORT_TERM,
+        metadata={
+            "iteration": iteration + 1,
+            "passed": passed,
+            "score": validation_report.score,
+            "issues_count": len(issues)
+        },
+        importance=0.6
+    )
 
     critique = {
         "passed": passed,
         "issues": issues,
-        "suggestions": suggestions,
+        "suggestions": suggestions + validation_report.recommendations,
         "iteration": iteration + 1,
-        "max_iterations": max_iterations
+        "max_iterations": smart_ralph.max_iterations,
+        # AETHERBOT enhanced fields
+        "smart_ralph_score": validation_report.score,
+        "smart_ralph_result": validation_report.result.value,
+        "brain_quality_score": quality_score,
+        "brain_assessment": assessment,
+        "guidance": guidance
     }
 
     next_phase = "generating" if passed else "analyzing"
@@ -409,12 +477,58 @@ def ralph_critic(state: NovaState) -> NovaState:
 
 def report_generator(state: NovaState) -> NovaState:
     """
-    📜 REPORT GENERATOR
-    Generates the final NOVA_FORENSIC.md report.
+    📜 REPORT GENERATOR (AETHERBOT Enhanced)
+    Generates the final NOVA_FORENSIC.md report and records in episodic memory.
     """
     analysis = state.get("analysis_report", {})
     scan_results = state.get("scan_results", {})
     repo_name = state.get("repo_name", "Unknown Repository")
+    repo_path = state.get("repo_path", "")
+
+    # AETHERBOT: Record this analysis in episodic memory
+    brain = get_aether_brain()
+    smart_ralph = get_smart_ralph()
+
+    # Create analysis record for memory
+    entropy_score = analysis.get("entropy_score", 50)
+    severity = analysis.get("severity_level", "Medium")
+
+    # Extract key findings
+    key_findings = []
+    if analysis.get("fortress", {}).get("open_wounds"):
+        key_findings.extend(analysis["fortress"]["open_wounds"][:3])
+    if analysis.get("confessional", {}).get("god_classes"):
+        key_findings.extend([f"God class: {gc}" for gc in analysis["confessional"]["god_classes"][:2]])
+
+    # Extract recommendations
+    recommendations = analysis.get("transmutation", {}).get("refactor_steps", [])
+
+    # Calculate scores
+    security_score = 100 - scan_results.get("security", {}).get("vulnerability_score", 0) * 10
+    performance_score = scan_results.get("performance", {}).get("performance_score", 80)
+
+    # Create and store analysis record
+    analysis_record = AnalysisRecord(
+        repo_name=repo_name,
+        repo_path=repo_path,
+        timestamp=datetime.now().isoformat(),
+        entropy_score=entropy_score,
+        severity=severity,
+        key_findings=key_findings[:5],
+        recommendations=recommendations[:5],
+        guilt_index=scan_results.get("coder_guilt", {}).get("guilt_index", 0),
+        security_score=security_score,
+        performance_score=performance_score
+    )
+
+    # Record in episodic memory
+    brain.memory.record_analysis(analysis_record)
+
+    # Reflect on the analysis for learning
+    brain.reflect_on_analysis(analysis_record)
+
+    # Consolidate memory (promote important short-term to long-term)
+    brain.memory.consolidate()
 
     severity = analysis.get("severity_level", "Medium")
     entropy = analysis.get("entropy_score", 50)
@@ -574,15 +688,38 @@ def report_generator(state: NovaState) -> NovaState:
             "",
         ])
 
-    # Footer
+    # Footer with AETHERBOT branding
+    ralph_summary = smart_ralph.get_summary()
+    brain_stats = brain.get_stats()
+
     report_lines.extend([
+        "---",
+        "",
+        "## 🧠 AETHERBOT Analysis Metadata",
+        "",
+        f"- **Smart Ralph Iterations:** {ralph_summary.get('total_iterations', 0)}",
+        f"- **Quality Score:** {ralph_summary.get('average_score', 0):.2f}",
+        f"- **Brain Decisions Made:** {brain_stats.get('total_decisions', 0)}",
+        f"- **Memories Stored:** {sum(brain_stats.get('memory_stats', {}).values())}",
+        "",
         "---",
         "",
         "*Report generated by NOVA v3.1 - The Forensic Code Auditor*",
         "",
         "```",
-        "🌌 \"In the darkness of technical debt, NOVA brings light.\"",
+        "╔═══════════════════════════════════════════════════════════════════╗",
+        "║     █████╗ ███████╗████████╗██╗  ██╗███████╗██████╗ ██████╗  ██████╗ ████████╗ ║",
+        "║    ██╔══██╗██╔════╝╚══██╔══╝██║  ██║██╔════╝██╔══██╗██╔══██╗██╔═══██╗╚══██╔══╝ ║",
+        "║    ███████║█████╗     ██║   ███████║█████╗  ██████╔╝██████╔╝██║   ██║   ██║    ║",
+        "║    ██╔══██║██╔══╝     ██║   ██╔══██║██╔══╝  ██╔══██╗██╔══██╗██║   ██║   ██║    ║",
+        "║    ██║  ██║███████╗   ██║   ██║  ██║███████╗██║  ██║██████╔╝╚██████╔╝   ██║    ║",
+        "║    ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝  ╚═════╝    ╚═╝    ║",
+        "║                                                                               ║",
+        "║                      POWERED BY AETHERLINK                                    ║",
+        "╚═══════════════════════════════════════════════════════════════════╝",
         "```",
+        "",
+        "🌌 \"In the darkness of technical debt, NOVA brings light.\"",
     ])
 
     final_report = "\n".join(report_lines)
@@ -668,6 +805,7 @@ def create_nova_graph() -> StateGraph:
 def run_nova_analysis(repo_path: str, repo_name: Optional[str] = None) -> Dict[str, Any]:
     """
     Execute the full NOVA analysis pipeline.
+    AETHERBOT Enhanced with intelligent memory and decision-making.
 
     Args:
         repo_path: Path to the repository to analyze
@@ -678,6 +816,14 @@ def run_nova_analysis(repo_path: str, repo_name: Optional[str] = None) -> Dict[s
     """
     if repo_name is None:
         repo_name = os.path.basename(repo_path)
+
+    # Reset AETHERBOT for new analysis
+    smart_ralph = get_smart_ralph()
+    smart_ralph.reset()
+
+    # Clear session memory (keep long-term and episodic)
+    brain = get_aether_brain()
+    brain.memory.clear_session()
 
     initial_state: NovaState = {
         "repo_path": repo_path,
