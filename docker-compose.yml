@@ -1,0 +1,73 @@
+# 🌌 NOVA v3.1 - Docker Compose Configuration
+# Includes NOVA CLI and Qdrant Vector Database
+
+version: '3.8'
+
+services:
+  # NOVA Forensic Code Auditor
+  nova:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nova-scanner
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - QDRANT_HOST=qdrant
+      - QDRANT_PORT=6333
+    volumes:
+      # Mount repository to scan
+      - ${SCAN_TARGET:-./}:/repo:ro
+      # Output directory for reports
+      - ./reports:/reports
+    depends_on:
+      - qdrant
+    networks:
+      - nova-network
+    # Override default command to scan mounted repo
+    command: ["scan", "/repo", "--output", "/reports/NOVA_FORENSIC.md"]
+
+  # Qdrant Vector Database
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: nova-qdrant
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+    networks:
+      - nova-network
+    environment:
+      - QDRANT__SERVICE__GRPC_PORT=6334
+
+  # Development service with interactive shell
+  nova-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nova-dev
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - QDRANT_HOST=qdrant
+      - QDRANT_PORT=6333
+    volumes:
+      - ${SCAN_TARGET:-./}:/repo:ro
+      - ./reports:/reports
+      - ./nova:/app/nova  # Hot reload for development
+    depends_on:
+      - qdrant
+    networks:
+      - nova-network
+    entrypoint: ["/bin/bash"]
+    stdin_open: true
+    tty: true
+    profiles:
+      - dev
+
+networks:
+  nova-network:
+    driver: bridge
+
+volumes:
+  qdrant_storage:
+    driver: local
