@@ -4,11 +4,14 @@
 
 ## THE FORENSIC CODE AUDITOR
 
+### POWERED BY AETHERBOT
+
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Docker Ready](https://img.shields.io/badge/docker-ready-blue.svg)](https://www.docker.com/)
 [![LangGraph](https://img.shields.io/badge/LangGraph-powered-purple.svg)](https://github.com/langchain-ai/langgraph)
 [![Claude AI](https://img.shields.io/badge/Claude-AI%20Powered-orange.svg)](https://anthropic.com)
+[![AETHERBOT](https://img.shields.io/badge/AETHERBOT-Intelligent%20Core-cyan.svg)](#-aetherbot---the-intelligent-core)
 
 ---
 
@@ -18,13 +21,28 @@
 ---
 
 ```
-    ███╗   ██╗ ██████╗ ██╗   ██╗ █████╗     ██╗   ██╗██████╗    ██╗
-    ████╗  ██║██╔═══██╗██║   ██║██╔══██╗    ██║   ██║╚════██╗  ███║
-    ██╔██╗ ██║██║   ██║██║   ██║███████║    ██║   ██║ █████╔╝  ╚██║
-    ██║╚██╗██║██║   ██║╚██╗ ██╔╝██╔══██║    ╚██╗ ██╔╝ ╚═══██╗   ██║
-    ██║ ╚████║╚██████╔╝ ╚████╔╝ ██║  ██║     ╚████╔╝ ██████╔╝██╗██║
-    ╚═╝  ╚═══╝ ╚═════╝   ╚═══╝  ╚═╝  ╚═╝      ╚═══╝  ╚═════╝ ╚═╝╚═╝
-                    THE FORENSIC CODE AUDITOR
+╔═══════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                   ║
+║     ███╗   ██╗ ██████╗ ██╗   ██╗ █████╗     ██╗   ██╗██████╗    ██╗               ║
+║     ████╗  ██║██╔═══██╗██║   ██║██╔══██╗    ██║   ██║╚════██╗  ███║               ║
+║     ██╔██╗ ██║██║   ██║██║   ██║███████║    ██║   ██║ █████╔╝  ╚██║               ║
+║     ██║╚██╗██║██║   ██║╚██╗ ██╔╝██╔══██║    ╚██╗ ██╔╝ ╚═══██╗   ██║               ║
+║     ██║ ╚████║╚██████╔╝ ╚████╔╝ ██║  ██║     ╚████╔╝ ██████╔╝██╗██║               ║
+║     ╚═╝  ╚═══╝ ╚═════╝   ╚═══╝  ╚═╝  ╚═╝      ╚═══╝  ╚═════╝ ╚═╝╚═╝               ║
+║                                                                                   ║
+║                        THE FORENSIC CODE AUDITOR                                  ║
+║                                                                                   ║
+║  ╔═══════════════════════════════════════════════════════════════════════════╗   ║
+║  ║  █████╗ ███████╗████████╗██╗  ██╗███████╗██████╗ ██████╗  ██████╗ ████████╗║   ║
+║  ║ ██╔══██╗██╔════╝╚══██╔══╝██║  ██║██╔════╝██╔══██╗██╔══██╗██╔═══██╗╚══██╔══╝║   ║
+║  ║ ███████║█████╗     ██║   ███████║█████╗  ██████╔╝██████╔╝██║   ██║   ██║   ║   ║
+║  ║ ██╔══██║██╔══╝     ██║   ██╔══██║██╔══╝  ██╔══██╗██╔══██╗██║   ██║   ██║   ║   ║
+║  ║ ██║  ██║███████╗   ██║   ██║  ██║███████╗██║  ██║██████╔╝╚██████╔╝   ██║   ║   ║
+║  ║ ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝  ╚═════╝    ╚═╝   ║   ║
+║  ║                     POWERED BY AETHERLINK                                 ║   ║
+║  ╚═══════════════════════════════════════════════════════════════════════════╝   ║
+║                                                                                   ║
+╚═══════════════════════════════════════════════════════════════════════════════════╝
 ```
 
 *"In the darkness of technical debt, NOVA brings light."*
@@ -36,9 +54,10 @@
 ## 📋 TABLE OF CONTENTS
 
 - [Overview](#-overview)
+- [AETHERBOT - The Intelligent Core](#-aetherbot---the-intelligent-core)
 - [Key Features](#-key-features)
 - [The 4 Forensic Protocols](#-the-4-forensic-protocols)
-- [The Ralph Loop](#-the-ralph-loop-quality-gate)
+- [The Smart Ralph Loop](#-the-smart-ralph-loop-quality-gate)
 - [Installation](#-installation)
 - [Quick Start](#-quick-start)
 - [CLI Reference](#-cli-reference)
@@ -70,6 +89,324 @@
 ### Mission Statement
 
 > *NOVA exists to reveal what developers hide—even from themselves. The technical debt, the desperate hacks, the security sins, and the performance crimes. Only through brutal honesty can transmutation occur.*
+
+---
+
+## 🧠 AETHERBOT - THE INTELLIGENT CORE
+
+NOVA v3.1 is powered by **AETHERBOT** (codename: AETHERLINK) - an intelligent agentic system with deep memory, strategic planning, and adaptive quality validation.
+
+```
+╔═══════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                   ║
+║                        🧠 AETHERBOT SYSTEM ARCHITECTURE                           ║
+║                                                                                   ║
+╠═══════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                   ║
+║     ┌─────────────────────────────────────────────────────────────────────────┐   ║
+║     │                         AETHERBOT CORE                                  │   ║
+║     │  ┌───────────────┐  ┌───────────────┐  ┌───────────────┐               │   ║
+║     │  │               │  │               │  │               │               │   ║
+║     │  │  AETHER       │  │   AETHER      │  │    SMART      │               │   ║
+║     │  │  MEMORY       │◀─┤   BRAIN       │─▶│    RALPH      │               │   ║
+║     │  │   🗄️          │  │    🧠         │  │     🎭        │               │   ║
+║     │  │               │  │               │  │               │               │   ║
+║     │  │  Deep         │  │  Strategic    │  │  Intelligent  │               │   ║
+║     │  │  Persistence  │  │  Decisions    │  │  Validation   │               │   ║
+║     │  │               │  │               │  │               │               │   ║
+║     │  └───────┬───────┘  └───────┬───────┘  └───────┬───────┘               │   ║
+║     │          │                  │                  │                       │   ║
+║     │          └──────────────────┼──────────────────┘                       │   ║
+║     │                             │                                          │   ║
+║     │                             ▼                                          │   ║
+║     │              ┌─────────────────────────────┐                           │   ║
+║     │              │     LANGGRAPH PIPELINE      │                           │   ║
+║     │              │  Scanner → Analyst → Ralph  │                           │   ║
+║     │              └─────────────────────────────┘                           │   ║
+║     │                                                                        │   ║
+║     └─────────────────────────────────────────────────────────────────────────┘   ║
+║                                                                                   ║
+╚═══════════════════════════════════════════════════════════════════════════════════╝
+```
+
+### 🗄️ AETHER MEMORY - Deep Persistence System
+
+The memory system provides persistent context across sessions with multiple memory types:
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                           🗄️ AETHER MEMORY SYSTEM                                   │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                     │
+│   ┌─────────────────────────────────────────────────────────────────────────────┐   │
+│   │                         MEMORY ARCHITECTURE                                 │   │
+│   │                                                                             │   │
+│   │                           ┌─────────────┐                                   │   │
+│   │                           │   QDRANT    │                                   │   │
+│   │                           │  VECTOR DB  │                                   │   │
+│   │                           └──────┬──────┘                                   │   │
+│   │                                  │                                          │   │
+│   │    ┌─────────────────────────────┼─────────────────────────────┐            │   │
+│   │    │                             │                             │            │   │
+│   │    ▼                             ▼                             ▼            │   │
+│   │ ┌──────────┐              ┌──────────────┐              ┌──────────┐        │   │
+│   │ │ SHORT    │   promotes   │    LONG      │   informs    │ WORKING  │        │   │
+│   │ │ TERM     │─────────────▶│    TERM      │◀─────────────│ MEMORY   │        │   │
+│   │ │ ⏱️       │              │    💾        │              │  ⚡      │        │   │
+│   │ │          │              │              │              │          │        │   │
+│   │ │ Current  │              │  Persistent  │              │ Active   │        │   │
+│   │ │ Session  │              │  Knowledge   │              │ Process  │        │   │
+│   │ └──────────┘              └──────────────┘              └──────────┘        │   │
+│   │                                  ▲                                          │   │
+│   │    ┌─────────────────────────────┼─────────────────────────────┐            │   │
+│   │    │                             │                             │            │   │
+│   │    ▼                             │                             ▼            │   │
+│   │ ┌──────────┐                     │                      ┌──────────┐        │   │
+│   │ │ EPISODIC │    consolidates     │     patterns         │ SEMANTIC │        │   │
+│   │ │ MEMORY   │─────────────────────┴──────────────────────│ MEMORY   │        │   │
+│   │ │  📚      │                                            │   🔍     │        │   │
+│   │ │          │                                            │          │        │   │
+│   │ │  Past    │                                            │  Code    │        │   │
+│   │ │ Analyses │                                            │ Patterns │        │   │
+│   │ └──────────┘                                            └──────────┘        │   │
+│   │                                                                             │   │
+│   └─────────────────────────────────────────────────────────────────────────────┘   │
+│                                                                                     │
+│   MEMORY OPERATIONS:                                                                │
+│   ┌───────────────┬───────────────┬───────────────┬───────────────┐                 │
+│   │  remember()   │   recall()    │   forget()    │ consolidate() │                 │
+│   │     📝        │      🔎       │      🗑️       │      🔄       │                 │
+│   │  Store new    │  Semantic     │   Remove      │   Promote     │                 │
+│   │  memories     │  search       │   memories    │   important   │                 │
+│   └───────────────┴───────────────┴───────────────┴───────────────┘                 │
+│                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 🧠 AETHER BRAIN - Strategic Decision Engine
+
+The brain orchestrates intelligent analysis with adaptive strategies:
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                           🧠 AETHER BRAIN DECISION ENGINE                           │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                     │
+│   REPOSITORY ANALYSIS                                                               │
+│   ══════════════════                                                                │
+│                                                                                     │
+│     📁 Repository                                                                   │
+│         │                                                                           │
+│         ▼                                                                           │
+│   ┌─────────────────────────────────────────────────────────────────────────────┐   │
+│   │                        SIZE DETECTION                                       │   │
+│   │                                                                             │   │
+│   │   TINY          SMALL          MEDIUM         LARGE          MASSIVE        │   │
+│   │   <100          100-1K         1K-10K         10K-100K       >100K          │   │
+│   │   files         files          files          files          files          │   │
+│   │     │             │              │               │              │           │   │
+│   │     ▼             ▼              ▼               ▼              ▼           │   │
+│   │  ┌──────┐     ┌──────┐      ┌──────┐       ┌──────┐       ┌──────┐         │   │
+│   │  │ FULL │     │ FULL │      │SMART │       │TARGET│       │SURGIC│         │   │
+│   │  │ SCAN │     │ SCAN │      │ SCAN │       │ SCAN │       │ SCAN │         │   │
+│   │  └──────┘     └──────┘      └──────┘       └──────┘       └──────┘         │   │
+│   │                                                                             │   │
+│   │  100%          100%           30%            10%            5%              │   │
+│   │  coverage      coverage       sampling       sampling       sampling        │   │
+│   │                                                                             │   │
+│   └─────────────────────────────────────────────────────────────────────────────┘   │
+│                                                                                     │
+│   AGENT COORDINATION                                                                │
+│   ══════════════════                                                                │
+│                                                                                     │
+│   ┌───────────┐   ┌───────────┐   ┌───────────┐   ┌───────────┐   ┌───────────┐     │
+│   │  SCANNER  │   │  ANALYST  │   │  CRITIC   │   │ REPORTER  │   │STRATEGIST │     │
+│   │    🔬     │   │    🔍     │   │    🎭     │   │    📜     │   │    🎯     │     │
+│   │           │   │           │   │           │   │           │   │           │     │
+│   │   Data    │   │  Pattern  │   │  Quality  │   │  Report   │   │ Planning  │     │
+│   │ Collection│   │ Analysis  │   │ Validation│   │ Generation│   │ & Control │     │
+│   └─────┬─────┘   └─────┬─────┘   └─────┬─────┘   └─────┬─────┘   └─────┬─────┘     │
+│         │               │               │               │               │           │
+│         └───────────────┴───────────────┴───────────────┴───────────────┘           │
+│                                         │                                           │
+│                                         ▼                                           │
+│                            ┌─────────────────────┐                                  │
+│                            │  COORDINATED FLOW   │                                  │
+│                            │   WITH FEEDBACK     │                                  │
+│                            └─────────────────────┘                                  │
+│                                                                                     │
+│   DECISION TYPES:                                                                   │
+│   ┌──────────────┬──────────────┬──────────────┬──────────────┬──────────────┐      │
+│   │ SCAN         │ DEPTH        │ PROTOCOL     │ QUALITY      │ ITERATION    │      │
+│   │ STRATEGY     │ ADJUSTMENT   │ SELECTION    │ THRESHOLD    │ CONTROL      │      │
+│   │     📊       │      📏      │      🎚️      │      ✅      │      🔄      │      │
+│   └──────────────┴──────────────┴──────────────┴──────────────┴──────────────┘      │
+│                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 🎭 SMART RALPH - Intelligent Validation Critic
+
+The enhanced Ralph critic with adaptive thresholds and detailed feedback:
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                           🎭 SMART RALPH VALIDATION SYSTEM                          │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                     │
+│   VALIDATION CHECKS                                                                 │
+│   ═════════════════                                                                 │
+│                                                                                     │
+│   ┌─────────────────────────────────────────────────────────────────────────────┐   │
+│   │                                                                             │   │
+│   │   ┌──────────────┐   ┌──────────────┐   ┌──────────────┐   ┌──────────────┐ │   │
+│   │   │ COMPLETENESS │   │    DEPTH     │   │ACTIONABILITY │   │ CONSISTENCY  │ │   │
+│   │   │      ✓       │   │      ✓       │   │      ✓       │   │      ✓       │ │   │
+│   │   │              │   │              │   │              │   │              │ │   │
+│   │   │  All 4       │   │  Sufficient  │   │  Specific    │   │  No          │ │   │
+│   │   │  protocols   │   │  findings    │   │  recommend-  │   │  conflicts   │ │   │
+│   │   │  have data   │   │  per area    │   │  ations      │   │  in data     │ │   │
+│   │   │              │   │              │   │              │   │              │ │   │
+│   │   └──────┬───────┘   └──────┬───────┘   └──────┬───────┘   └──────┬───────┘ │   │
+│   │          │                  │                  │                  │         │   │
+│   │          └──────────────────┼──────────────────┼──────────────────┘         │   │
+│   │                             │                  │                            │   │
+│   │                             ▼                  ▼                            │   │
+│   │                    ┌────────────────────────────────┐                       │   │
+│   │                    │      QUALITY SCORE CALC        │                       │   │
+│   │                    │                                │                       │   │
+│   │                    │   Score = Σ(weights × checks)  │                       │   │
+│   │                    │                                │                       │   │
+│   │                    └───────────────┬────────────────┘                       │   │
+│   │                                    │                                        │   │
+│   └─────────────────────────────────────────────────────────────────────────────┘   │
+│                                        │                                            │
+│                                        ▼                                            │
+│   ADAPTIVE THRESHOLD                                                                │
+│   ══════════════════                                                                │
+│                                                                                     │
+│   ┌─────────────────────────────────────────────────────────────────────────────┐   │
+│   │                                                                             │   │
+│   │     BASE        REPO SIZE       ITERATION        HISTORY         FINAL      │   │
+│   │   THRESHOLD    ADJUSTMENT      ADJUSTMENT      LEARNING       THRESHOLD     │   │
+│   │                                                                             │   │
+│   │      0.70    +    ±0.15     +     -0.05      +    ±0.05    =    ADAPTIVE    │   │
+│   │                                  per iter                                   │   │
+│   │                                                                             │   │
+│   │    ┌─────┐      ┌─────┐        ┌─────┐        ┌─────┐        ┌─────┐        │   │
+│   │    │     │      │TINY │        │ #1  │        │PAST │        │FINAL│        │   │
+│   │    │ 70% │  +   │+0%  │   +    │-0%  │   +    │PASS │   =    │ 70% │        │   │
+│   │    │     │      │MASS │        │ #3  │        │FAIL │        │40-90│        │   │
+│   │    │     │      │-15% │        │-10% │        │±5%  │        │  %  │        │   │
+│   │    └─────┘      └─────┘        └─────┘        └─────┘        └─────┘        │   │
+│   │                                                                             │   │
+│   └─────────────────────────────────────────────────────────────────────────────┘   │
+│                                                                                     │
+│   VALIDATION RESULTS                                                                │
+│   ══════════════════                                                                │
+│                                                                                     │
+│   ┌────────────────┬────────────────┬────────────────┬────────────────┐             │
+│   │     PASS ✅    │  SOFT_FAIL ⚠️  │  HARD_FAIL ❌  │  CRITICAL 🚨   │             │
+│   │                │                │                │                │             │
+│   │  Quality >=    │  Minor issues  │  Must iterate  │  Fundamental   │             │
+│   │  threshold     │  continue with │  re-analyze    │  breakdown     │             │
+│   │                │  warnings      │                │                │             │
+│   │     ↓          │       ↓        │       ↓        │       ↓        │             │
+│   │  GENERATE      │   GENERATE     │   LOOP BACK    │    ABORT       │             │
+│   │  REPORT        │   + WARNINGS   │   TO ANALYST   │    ANALYSIS    │             │
+│   └────────────────┴────────────────┴────────────────┴────────────────┘             │
+│                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 🔄 THE COMPLETE AETHERBOT FLOW
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                        🔄 COMPLETE AETHERBOT INTELLIGENT FLOW                       │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                     │
+│                                                                                     │
+│    📁 REPOSITORY                                                                    │
+│         │                                                                           │
+│         │  ┌─────────────────────────────────────────────────────────────────┐      │
+│         │  │                    🧠 AETHER BRAIN                              │      │
+│         │  │                                                                 │      │
+│         └─▶│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐        │      │
+│            │  │  Analyze    │───▶│  Determine  │───▶│   Assign    │        │      │
+│            │  │  Repository │    │  Strategy   │    │   Agents    │        │      │
+│            │  └─────────────┘    └─────────────┘    └──────┬──────┘        │      │
+│            │                                               │               │      │
+│            └───────────────────────────────────────────────┼───────────────┘      │
+│                                                            │                       │
+│                                                            ▼                       │
+│   ┌────────────────────────────────────────────────────────────────────────────┐   │
+│   │                         LANGGRAPH PIPELINE                                 │   │
+│   │                                                                            │   │
+│   │   ┌──────────────┐      ┌──────────────┐      ┌──────────────┐            │   │
+│   │   │   SCANNER    │      │   ANALYST    │      │    SMART     │            │   │
+│   │   │    AGENT     │─────▶│    AGENT     │─────▶│    RALPH     │            │   │
+│   │   │     🔬       │      │     🔍       │      │     🎭       │            │   │
+│   │   │              │      │              │      │              │            │   │
+│   │   │  Protocol A  │      │   Claude     │      │  Validate    │            │   │
+│   │   │  Protocol B  │      │   Analysis   │      │  Quality     │            │   │
+│   │   │  Protocol C  │      │              │      │              │            │   │
+│   │   │  Protocol D  │      │              │      │              │            │   │
+│   │   └──────────────┘      └──────────────┘      └───────┬──────┘            │   │
+│   │                                                       │                   │   │
+│   │                                                       │                   │   │
+│   │                              ┌────────────────────────┼─────────────┐     │   │
+│   │                              │                        │             │     │   │
+│   │                              ▼                        ▼             │     │   │
+│   │                         ┌────────┐              ┌────────┐         │     │   │
+│   │                         │  PASS  │              │  FAIL  │         │     │   │
+│   │                         │   ✅   │              │   ❌   │         │     │   │
+│   │                         └────┬───┘              └────┬───┘         │     │   │
+│   │                              │                       │             │     │   │
+│   │                              │                       │ iteration   │     │   │
+│   │                              │                       │ < max?      │     │   │
+│   │                              │                       │             │     │   │
+│   │                              ▼                       └─────────────┘     │   │
+│   │                     ┌──────────────┐                        │            │   │
+│   │                     │   REPORT     │◀───────────────────────┘            │   │
+│   │                     │  GENERATOR   │     (loop back to analyst)          │   │
+│   │                     │     📜       │                                     │   │
+│   │                     └───────┬──────┘                                     │   │
+│   │                             │                                            │   │
+│   └─────────────────────────────┼────────────────────────────────────────────┘   │
+│                                 │                                                 │
+│                                 ▼                                                 │
+│   ┌────────────────────────────────────────────────────────────────────────────┐   │
+│   │                       🗄️ AETHER MEMORY                                     │   │
+│   │                                                                            │   │
+│   │   ┌──────────────────┐   ┌──────────────────┐   ┌──────────────────┐      │   │
+│   │   │ Record Analysis  │   │ Learn Patterns   │   │ Store Insights   │      │   │
+│   │   │ in EPISODIC      │   │ in SEMANTIC      │   │ in LONG-TERM     │      │   │
+│   │   │     📚           │   │      🔍          │   │      💾          │      │   │
+│   │   └──────────────────┘   └──────────────────┘   └──────────────────┘      │   │
+│   │                                                                            │   │
+│   └────────────────────────────────────────────────────────────────────────────┘   │
+│                                 │                                                 │
+│                                 ▼                                                 │
+│                        📜 NOVA_FORENSIC.md                                        │
+│                     + AETHERBOT Metadata                                          │
+│                                                                                   │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+### AETHERBOT Key Capabilities
+
+| Component | Capability | Benefit |
+|-----------|------------|---------|
+| **AetherMemory** | Vector-based semantic search | Recalls relevant past analyses |
+| **AetherMemory** | Memory consolidation | Promotes important findings to long-term |
+| **AetherMemory** | Pattern learning | Recognizes recurring code issues |
+| **AetherBrain** | Repo size detection | Optimizes scan strategy automatically |
+| **AetherBrain** | Agent coordination | Manages parallel analysis tasks |
+| **AetherBrain** | Quality evaluation | Decides when analysis is complete |
+| **SmartRalph** | Adaptive thresholds | Adjusts standards per repo type |
+| **SmartRalph** | Detailed criticism | Provides actionable feedback |
+| **SmartRalph** | Feedback learning | Improves from user corrections |
 
 ---
 
@@ -371,55 +708,126 @@ PERFORMANCE SCORE: 82.0/100
 
 ---
 
-## 🔄 THE RALPH LOOP (Quality Gate)
+## 🔄 THE SMART RALPH LOOP (Quality Gate)
 
-NOVA implements a unique quality assurance mechanism called **The Ralph Loop**—a critic agent that validates analysis quality before report generation.
+NOVA implements an **intelligent quality assurance mechanism** called **The Smart Ralph Loop**—an AETHERBOT-enhanced critic agent with adaptive thresholds and deep learning.
 
 ```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                           THE RALPH LOOP                                    │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                             │
-│                    ┌──────────────────┐                                     │
-│                    │  SCANNER AGENT   │                                     │
-│                    │   (Raw Data)     │                                     │
-│                    └────────┬─────────┘                                     │
-│                             │                                               │
-│                             ▼                                               │
-│                    ┌──────────────────┐                                     │
-│                    │  ANALYST AGENT   │                                     │
-│                    │  (LLM Analysis)  │                                     │
-│                    └────────┬─────────┘                                     │
-│                             │                                               │
-│                             ▼                                               │
-│                    ┌──────────────────┐                                     │
-│              ┌────▶│   RALPH NODE     │◀────┐                               │
-│              │     │   (The Critic)   │     │                               │
-│              │     └────────┬─────────┘     │                               │
-│              │              │               │                               │
-│              │         ┌────┴────┐          │                               │
-│              │         │         │          │                               │
-│              │       PASS      FAIL         │                               │
-│              │         │         │          │                               │
-│              │         ▼         └──────────┘                               │
-│              │  ┌──────────────────┐     (Max 3 iterations)                 │
-│              │  │ REPORT GENERATOR │                                        │
-│              │  └──────────────────┘                                        │
-│              │              │                                               │
-│              │              ▼                                               │
-│              │     📜 NOVA_FORENSIC.md                                      │
-│              │                                                              │
-│              └──────────────────────────────────────────────────────────    │
-│                                                                             │
-│  RALPH'S VALIDATION CHECKS:                                                 │
-│  ──────────────────────────                                                 │
-│  ✓ Did the Analyst cite specific file paths?                               │
-│  ✓ Is Code Rot backed by actual dates?                                     │
-│  ✓ Are Security risks validated against scan data?                         │
-│  ✓ Are recommendations actionable and specific?                            │
-│  ✓ Is the Sacred Yes genuine and insightful?                               │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                     🎭 THE SMART RALPH LOOP (AETHERBOT ENHANCED)                    │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                     │
+│         ┌─────────────────────────────────────────────────────────────────┐         │
+│         │                    🧠 AETHER BRAIN                              │         │
+│         │                   Strategy Selection                            │         │
+│         └────────────────────────────┬────────────────────────────────────┘         │
+│                                      │                                              │
+│                                      ▼                                              │
+│                          ┌──────────────────────┐                                   │
+│                          │    SCANNER AGENT     │                                   │
+│                          │         🔬           │                                   │
+│                          │  ┌────┐ ┌────┐      │                                   │
+│                          │  │ A  │ │ B  │      │  4 Forensic                       │
+│                          │  │ROT │ │GILT│      │  Protocols                        │
+│                          │  └────┘ └────┘      │                                   │
+│                          │  ┌────┐ ┌────┐      │                                   │
+│                          │  │ C  │ │ D  │      │                                   │
+│                          │  │SEC │ │PERF│      │                                   │
+│                          │  └────┘ └────┘      │                                   │
+│                          └──────────┬───────────┘                                   │
+│                                     │                                               │
+│                                     ▼                                               │
+│                          ┌──────────────────────┐                                   │
+│                          │    ANALYST AGENT     │                                   │
+│                          │         🔍           │                                   │
+│                          │    Claude LLM        │                                   │
+│                          │    Interpretation    │                                   │
+│                          └──────────┬───────────┘                                   │
+│                                     │                                               │
+│                                     ▼                                               │
+│    ┌────────────────────────────────────────────────────────────────────────────┐   │
+│    │                        🎭 SMART RALPH CRITIC                               │   │
+│    │                                                                            │   │
+│    │    ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐      │   │
+│    │    │COMPLETENESS │  │   DEPTH     │  │ACTIONABILITY│  │ CONSISTENCY │      │   │
+│    │    │     ✓/✗     │  │    ✓/✗      │  │     ✓/✗     │  │    ✓/✗      │      │   │
+│    │    └──────┬──────┘  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘      │   │
+│    │           └────────────────┴────────────────┴────────────────┘            │   │
+│    │                                    │                                      │   │
+│    │                         ADAPTIVE THRESHOLD                                │   │
+│    │                        (repo size, iteration,                             │   │
+│    │                         past feedback)                                    │   │
+│    └────────────────────────────────────┼───────────────────────────────────────┘   │
+│                                         │                                           │
+│               ┌─────────────────────────┴─────────────────────────┐                 │
+│               │                                                   │                 │
+│               ▼                                                   ▼                 │
+│      ┌────────────────┐                               ┌────────────────┐            │
+│      │     PASS ✅    │                               │     FAIL ❌    │            │
+│      │ Score >= Thresh│                               │ Score < Thresh │            │
+│      └───────┬────────┘                               └───────┬────────┘            │
+│              │                                                │                     │
+│              │                                    ┌───────────┴───────────┐         │
+│              │                                    │                       │         │
+│              │                              iteration < 3?          iteration >= 3  │
+│              │                                    │                       │         │
+│              │                         ┌─────────┘                       │         │
+│              │                         │                                 │         │
+│              │                         │  ┌─────────────────────────┐    │         │
+│              │                         │  │  ITERATION GUIDANCE     │    │         │
+│              │                         │  │  • Focus areas          │    │         │
+│              │                         │  │  • Specific criticisms  │    │         │
+│              │                         │  │  • Threshold adjust     │    │         │
+│              │                         │  └───────────┬─────────────┘    │         │
+│              │                         │              │                  │         │
+│              │                         │    LOOP BACK │                  │         │
+│              │                         │    TO ANALYST│                  │         │
+│              │                         │              │                  │         │
+│              │                         └──────────────┼──────────────────┘         │
+│              │                                        │                            │
+│              ▼                                        │                            │
+│    ┌──────────────────────┐                          │                            │
+│    │   REPORT GENERATOR   │◀─────────────────────────┘                            │
+│    │         📜           │                                                       │
+│    │  Final Markdown +    │                                                       │
+│    │  AETHERBOT Metadata  │                                                       │
+│    └──────────┬───────────┘                                                       │
+│               │                                                                    │
+│               ▼                                                                    │
+│    ┌──────────────────────┐                                                        │
+│    │   🗄️ AETHER MEMORY   │                                                        │
+│    │  Record in EPISODIC  │                                                        │
+│    │  Learn PATTERNS      │                                                        │
+│    │  Consolidate MEMORY  │                                                        │
+│    └──────────┬───────────┘                                                        │
+│               │                                                                    │
+│               ▼                                                                    │
+│      📜 NOVA_FORENSIC.md                                                           │
+│    + AETHERBOT Metadata                                                            │
+│                                                                                    │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+### Smart Ralph's Enhanced Validation
+
+| Check | Description | Severity |
+|-------|-------------|----------|
+| **Completeness** | All 4 protocols returned data | Critical if >1 empty |
+| **Depth** | Minimum findings per protocol | Error if <3 total |
+| **Actionability** | Specific recommendations provided | Warning if vague |
+| **Consistency** | No conflicting severity assessments | Info level |
+| **File Citations** | Analyst cites specific file paths | Error if missing |
+| **Date Backing** | Code rot claims include dates | Warning if absent |
+
+### Adaptive Threshold Formula
+
+```
+THRESHOLD = BASE (0.70)
+          + REPO_SIZE_ADJUSTMENT  (-0.15 massive → 0 tiny)
+          + ITERATION_ADJUSTMENT  (-0.05 per iteration)
+          + HISTORY_LEARNING      (±0.05 past feedback)
+
+FINAL RANGE: 0.40 to 0.90
 ```
 
 ---
@@ -644,76 +1052,226 @@ See [examples/](./examples/) for sample reports.
 ### Project Structure
 
 ```
-nova/
-├── __init__.py              # Package metadata
-├── cli.py                   # Typer CLI interface
-│
-├── scanners/                # The 4 Forensic Protocols
-│   ├── __init__.py
-│   ├── code_rot.py          # 💀 Protocol A: Time Dimension
-│   ├── coder_guilt.py       # 😓 Protocol B: Emotional Dimension
-│   ├── security.py          # 🛡️ Protocol C: Security Dimension
-│   └── performance.py       # 🚀 Protocol D: Performance Dimension
-│
-├── agents/                  # LangGraph Implementation
-│   ├── __init__.py
-│   ├── state.py             # State definitions
-│   └── graph.py             # Ralph Loop & agent nodes
-│
-├── utils/                   # Utilities
-│   ├── __init__.py
-│   ├── display.py           # Rich console output
-│   └── vector_store.py      # Qdrant integration
-│
-└── templates/               # Report templates
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                              📁 NOVA PROJECT STRUCTURE                              │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                     │
+│  nova/                                                                              │
+│  ├── __init__.py                    # Package metadata + AETHERBOT exports          │
+│  ├── cli.py                         # Typer CLI interface                           │
+│  │                                                                                  │
+│  ├── 🧠 aetherbot/                  # AETHERBOT INTELLIGENT CORE                    │
+│  │   ├── __init__.py                # Module exports                                │
+│  │   ├── memory.py                  # 🗄️ AetherMemory - Deep persistence            │
+│  │   ├── brain.py                   # 🧠 AetherBrain - Strategic decisions          │
+│  │   └── ralph.py                   # 🎭 SmartRalphCritic - Intelligent validation  │
+│  │                                                                                  │
+│  ├── 🔬 scanners/                   # THE 4 FORENSIC PROTOCOLS                      │
+│  │   ├── __init__.py                                                                │
+│  │   ├── code_rot.py                # 💀 Protocol A: Time Dimension                 │
+│  │   ├── coder_guilt.py             # 😓 Protocol B: Emotional Dimension            │
+│  │   ├── security.py                # 🛡️ Protocol C: Security Dimension             │
+│  │   └── performance.py             # 🚀 Protocol D: Performance Dimension          │
+│  │                                                                                  │
+│  ├── 🔄 agents/                     # LANGGRAPH IMPLEMENTATION                      │
+│  │   ├── __init__.py                                                                │
+│  │   ├── state.py                   # State definitions (NovaState)                 │
+│  │   └── graph.py                   # Smart Ralph Loop + AETHERBOT integration      │
+│  │                                                                                  │
+│  └── 🛠️ utils/                      # UTILITIES                                     │
+│      ├── __init__.py                                                                │
+│      ├── display.py                 # Rich console output                           │
+│      └── vector_store.py            # Qdrant integration                            │
+│                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Data Flow
+### AETHERBOT Component Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                            NOVA DATA FLOW                                   │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                             │
-│   INPUT                PROCESSING                        OUTPUT             │
-│   ─────                ──────────                        ──────             │
-│                                                                             │
-│   ┌──────────┐        ┌──────────────────────────┐      ┌──────────────┐   │
-│   │   Git    │───────▶│     Protocol A           │─────▶│  Rot Score   │   │
-│   │  Repo    │        │     (Code Rot)           │      │  + Details   │   │
-│   └──────────┘        └──────────────────────────┘      └──────────────┘   │
-│        │                                                        │           │
-│        │              ┌──────────────────────────┐              │           │
-│        ├─────────────▶│     Protocol B           │──────────────┤           │
-│        │              │     (Guilt)              │              │           │
-│        │              └──────────────────────────┘              │           │
-│        │                                                        │           │
-│        │              ┌──────────────────────────┐              │           │
-│        ├─────────────▶│     Protocol C           │──────────────┤           │
-│        │              │     (Security)           │              │           │
-│        │              └──────────────────────────┘              │           │
-│        │                                                        │           │
-│        │              ┌──────────────────────────┐              │           │
-│        └─────────────▶│     Protocol D           │──────────────┤           │
-│                       │     (Performance)        │              │           │
-│                       └──────────────────────────┘              │           │
-│                                                                 │           │
-│                                                                 ▼           │
-│                                                        ┌──────────────┐     │
-│                                                        │   Analyst    │     │
-│                              ┌─────────────────────────│    Agent     │     │
-│                              │                         └──────┬───────┘     │
-│                              │                                │             │
-│                              ▼                                ▼             │
-│                       ┌──────────────┐                ┌──────────────┐      │
-│                       │    Ralph     │◀───────────────│   Report     │      │
-│                       │   Critic     │                │  Generator   │      │
-│                       └──────────────┘                └──────┬───────┘      │
-│                                                              │              │
-│                                                              ▼              │
-│                                                     📜 NOVA_FORENSIC.md     │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                         🧠 AETHERBOT COMPONENT DIAGRAM                              │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                     │
+│    ┌─────────────────────────────────────────────────────────────────────────┐      │
+│    │                          AETHERBOT CORE                                 │      │
+│    │                                                                         │      │
+│    │   ┌───────────────────────────────────────────────────────────────┐     │      │
+│    │   │                     🗄️ AETHER MEMORY                          │     │      │
+│    │   │                                                               │     │      │
+│    │   │   ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐        │     │      │
+│    │   │   │  SHORT  │  │  LONG   │  │ EPISODIC│  │ SEMANTIC│        │     │      │
+│    │   │   │  TERM   │  │  TERM   │  │ MEMORY  │  │ MEMORY  │        │     │      │
+│    │   │   │   ⏱️    │  │   💾    │  │   📚    │  │   🔍    │        │     │      │
+│    │   │   └────┬────┘  └────┬────┘  └────┬────┘  └────┬────┘        │     │      │
+│    │   │        │            │            │            │              │     │      │
+│    │   │        └────────────┴─────┬──────┴────────────┘              │     │      │
+│    │   │                           │                                  │     │      │
+│    │   │                    ┌──────▼──────┐                           │     │      │
+│    │   │                    │   QDRANT    │                           │     │      │
+│    │   │                    │  VECTOR DB  │                           │     │      │
+│    │   │                    └─────────────┘                           │     │      │
+│    │   └───────────────────────────────────────────────────────────────┘     │      │
+│    │                                │                                        │      │
+│    │                                │ provides context                       │      │
+│    │                                ▼                                        │      │
+│    │   ┌───────────────────────────────────────────────────────────────┐     │      │
+│    │   │                     🧠 AETHER BRAIN                           │     │      │
+│    │   │                                                               │     │      │
+│    │   │   ┌─────────────┐    ┌─────────────┐    ┌─────────────┐      │     │      │
+│    │   │   │  STRATEGY   │    │    AGENT    │    │   QUALITY   │      │     │      │
+│    │   │   │  PLANNING   │───▶│ COORDINATION│───▶│  EVALUATION │      │     │      │
+│    │   │   │     📊      │    │     🤝      │    │      ✅     │      │     │      │
+│    │   │   └─────────────┘    └─────────────┘    └─────────────┘      │     │      │
+│    │   │                                                               │     │      │
+│    │   │   Decision Types: SCAN_STRATEGY | DEPTH | PROTOCOL | QUALITY │     │      │
+│    │   └───────────────────────────────────────────────────────────────┘     │      │
+│    │                                │                                        │      │
+│    │                                │ informs                                │      │
+│    │                                ▼                                        │      │
+│    │   ┌───────────────────────────────────────────────────────────────┐     │      │
+│    │   │                   🎭 SMART RALPH CRITIC                       │     │      │
+│    │   │                                                               │     │      │
+│    │   │   ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐    │     │      │
+│    │   │   │ COMPLETE │  │  DEPTH   │  │ ACTION-  │  │CONSISTENT│    │     │      │
+│    │   │   │  NESS    │  │  CHECK   │  │ ABILITY  │  │   CY     │    │     │      │
+│    │   │   └────┬─────┘  └────┬─────┘  └────┬─────┘  └────┬─────┘    │     │      │
+│    │   │        │             │             │             │          │     │      │
+│    │   │        └─────────────┴──────┬──────┴─────────────┘          │     │      │
+│    │   │                             │                                │     │      │
+│    │   │                      ┌──────▼──────┐                         │     │      │
+│    │   │                      │  ADAPTIVE   │                         │     │      │
+│    │   │                      │  THRESHOLD  │                         │     │      │
+│    │   │                      │  (0.4-0.9)  │                         │     │      │
+│    │   │                      └─────────────┘                         │     │      │
+│    │   │                                                               │     │      │
+│    │   │   Results: PASS | SOFT_FAIL | HARD_FAIL | CRITICAL           │     │      │
+│    │   └───────────────────────────────────────────────────────────────┘     │      │
+│    │                                                                         │      │
+│    └─────────────────────────────────────────────────────────────────────────┘      │
+│                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+### Complete Data Flow with AETHERBOT
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                       📊 NOVA + AETHERBOT COMPLETE DATA FLOW                        │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                     │
+│   📁 REPOSITORY                                                                     │
+│       │                                                                             │
+│       │                                                                             │
+│       ▼                                                                             │
+│   ┌────────────────────────────────────────────────────────────────────────────┐    │
+│   │                         🧠 AETHER BRAIN                                    │    │
+│   │                                                                            │    │
+│   │   1. Analyze repo size & characteristics                                   │    │
+│   │   2. Query past analyses from EPISODIC MEMORY                              │    │
+│   │   3. Determine optimal strategy (tiny/small/medium/large/massive)          │    │
+│   │   4. Assign agents to tasks                                                │    │
+│   │                                                                            │    │
+│   └────────────────────────────────────────────────────────────────────────────┘    │
+│                                          │                                          │
+│                                          │ strategy                                 │
+│                                          ▼                                          │
+│   ┌────────────────────────────────────────────────────────────────────────────┐    │
+│   │                         🔬 SCANNER AGENT                                   │    │
+│   │                                                                            │    │
+│   │    ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐    │    │
+│   │    │ 💀 PROTOCOL A│ │ 😓 PROTOCOL B│ │ 🛡️ PROTOCOL C│ │ 🚀 PROTOCOL D│    │    │
+│   │    │   Code Rot   │ │ Coder Guilt  │ │   Security   │ │ Performance  │    │    │
+│   │    │              │ │              │ │              │ │              │    │    │
+│   │    │ • Staleness  │ │ • TODO/FIXME │ │ • Secrets    │ │ • Complexity │    │    │
+│   │    │ • Churn      │ │ • God classes│ │ • SQL inject │ │ • Big O      │    │    │
+│   │    │ • Silent dep │ │ • Desperation│ │ • Endpoints  │ │ • Imports    │    │    │
+│   │    └──────┬───────┘ └──────┬───────┘ └──────┬───────┘ └──────┬───────┘    │    │
+│   │           │                │                │                │            │    │
+│   │           └────────────────┴────────┬───────┴────────────────┘            │    │
+│   │                                     │                                     │    │
+│   └─────────────────────────────────────┼─────────────────────────────────────┘    │
+│                                         │ raw scan data                            │
+│                                         ▼                                          │
+│   ┌────────────────────────────────────────────────────────────────────────────┐    │
+│   │                         🔍 ANALYST AGENT                                   │    │
+│   │                                                                            │    │
+│   │                    ┌────────────────────────────┐                          │    │
+│   │                    │       CLAUDE LLM          │                          │    │
+│   │                    │                            │                          │    │
+│   │                    │  • Interpret raw metrics   │                          │    │
+│   │                    │  • Generate insights       │                          │    │
+│   │                    │  • Create recommendations  │                          │    │
+│   │                    │  • Find "Sacred Yes"       │                          │    │
+│   │                    │                            │                          │    │
+│   │                    └────────────────────────────┘                          │    │
+│   │                                                                            │    │
+│   └────────────────────────────────────┬───────────────────────────────────────┘    │
+│                                        │ analysis report                           │
+│                                        ▼                                           │
+│   ┌────────────────────────────────────────────────────────────────────────────┐    │
+│   │                      🎭 SMART RALPH CRITIC                                 │    │
+│   │                                                                            │    │
+│   │   ┌──────────────────────────────────────────────────────────────────┐    │    │
+│   │   │                    VALIDATION PIPELINE                            │    │    │
+│   │   │                                                                   │    │    │
+│   │   │   Completeness ──▶ Depth ──▶ Actionability ──▶ Consistency       │    │    │
+│   │   │        │              │            │               │              │    │    │
+│   │   │        └──────────────┴────────────┴───────────────┘              │    │    │
+│   │   │                              │                                    │    │    │
+│   │   │                              ▼                                    │    │    │
+│   │   │                   ┌─────────────────────┐                         │    │    │
+│   │   │                   │ ADAPTIVE THRESHOLD  │                         │    │    │
+│   │   │                   │ (context-aware)     │                         │    │    │
+│   │   │                   └──────────┬──────────┘                         │    │    │
+│   │   │                              │                                    │    │    │
+│   │   │              ┌───────────────┼───────────────┐                    │    │    │
+│   │   │              │               │               │                    │    │    │
+│   │   │              ▼               ▼               ▼                    │    │    │
+│   │   │          ┌──────┐       ┌────────┐      ┌────────┐               │    │    │
+│   │   │          │ PASS │       │SOFT_   │      │ FAIL   │               │    │    │
+│   │   │          │  ✅  │       │FAIL ⚠️ │      │  ❌    │               │    │    │
+│   │   │          └──┬───┘       └───┬────┘      └───┬────┘               │    │    │
+│   │   │             │               │               │                    │    │    │
+│   │   └─────────────┼───────────────┼───────────────┼────────────────────┘    │    │
+│   │                 │               │               │                         │    │
+│   └─────────────────┼───────────────┼───────────────┼─────────────────────────┘    │
+│                     │               │               │                              │
+│                     │               │               │ LOOP BACK (max 3x)           │
+│                     │               │               │                              │
+│                     ▼               ▼               └───────────────┐              │
+│   ┌────────────────────────────────────────────────────────────────│──────────┐    │
+│   │                      📜 REPORT GENERATOR                       │          │    │
+│   │                                                                │          │    │
+│   │   Generate NOVA_FORENSIC.md:                                   │          │    │
+│   │   ┌────────────────────────────────────────────────────────┐   │          │    │
+│   │   │  💀 I.  THE GRAVEYARD     (Code Rot)                   │   │          │    │
+│   │   │  😓 II. THE CONFESSIONAL  (Coder Guilt)                │◀──┘          │    │
+│   │   │  🛡️ III.THE FORTRESS      (Security)                   │              │    │
+│   │   │  ⚡ IV. THE ENGINE        (Performance)                 │              │    │
+│   │   │  🌌 V.  TRANSMUTATION     (Recommendations)            │              │    │
+│   │   │  🧠 VI. AETHERBOT METADATA                             │              │    │
+│   │   └────────────────────────────────────────────────────────┘              │    │
+│   │                                                                            │    │
+│   └────────────────────────────────────┬───────────────────────────────────────┘    │
+│                                        │                                           │
+│                                        ▼                                           │
+│   ┌────────────────────────────────────────────────────────────────────────────┐    │
+│   │                       🗄️ AETHER MEMORY                                     │    │
+│   │                                                                            │    │
+│   │   ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐           │    │
+│   │   │ Store analysis  │  │ Learn patterns  │  │   Consolidate   │           │    │
+│   │   │ in EPISODIC     │  │ in SEMANTIC     │  │   short → long  │           │    │
+│   │   │      📚         │  │       🔍        │  │       🔄        │           │    │
+│   │   └─────────────────┘  └─────────────────┘  └─────────────────┘           │    │
+│   │                                                                            │    │
+│   └────────────────────────────────────────────────────────────────────────────┘    │
+│                                        │                                           │
+│                                        ▼                                           │
+│                               📜 NOVA_FORENSIC.md                                  │
+│                              + AETHERBOT Metadata                                  │
+│                                                                                    │
+└─────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -907,34 +1465,79 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-```
-    ___    _____ ______ __  __ ______ ____   ____   ____  ______
-   /   |  / ___//_  __// / / // ____// __ \ / __ ) / __ \/_  __/
-  / /| |  \__ \  / /  / /_/ // __/  / /_/ // __  |/ / / / / /
- / ___ | ___/ / / /  / __  // /___ / _, _// /_/ // /_/ / / /
-/_/  |_|/____/ /_/  /_/ /_//_____//_/ |_|/_____/ \____/ /_/
+## 🧠 AETHERBOT SYSTEM SUMMARY
 
 ```
-
+╔═══════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                       ║
+║   ██████╗  ██████╗ ██╗    ██╗███████╗██████╗ ███████╗██████╗     ██████╗ ██╗   ██╗   ║
+║   ██╔══██╗██╔═══██╗██║    ██║██╔════╝██╔══██╗██╔════╝██╔══██╗    ██╔══██╗╚██╗ ██╔╝   ║
+║   ██████╔╝██║   ██║██║ █╗ ██║█████╗  ██████╔╝█████╗  ██║  ██║    ██████╔╝ ╚████╔╝    ║
+║   ██╔═══╝ ██║   ██║██║███╗██║██╔══╝  ██╔══██╗██╔══╝  ██║  ██║    ██╔══██╗  ╚██╔╝     ║
+║   ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║███████╗██████╔╝    ██████╔╝   ██║      ║
+║   ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝╚══════╝╚═════╝     ╚═════╝    ╚═╝      ║
+║                                                                                       ║
+╠═══════════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                       ║
+║   █████╗ ███████╗████████╗██╗  ██╗███████╗██████╗ ██████╗  ██████╗ ████████╗          ║
+║  ██╔══██╗██╔════╝╚══██╔══╝██║  ██║██╔════╝██╔══██╗██╔══██╗██╔═══██╗╚══██╔══╝          ║
+║  ███████║█████╗     ██║   ███████║█████╗  ██████╔╝██████╔╝██║   ██║   ██║             ║
+║  ██╔══██║██╔══╝     ██║   ██╔══██║██╔══╝  ██╔══██╗██╔══██╗██║   ██║   ██║             ║
+║  ██║  ██║███████╗   ██║   ██║  ██║███████╗██║  ██║██████╔╝╚██████╔╝   ██║             ║
+║  ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝  ╚═════╝    ╚═╝             ║
+║                                                                                       ║
+╠═══════════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                       ║
+║                          ┌─────────────────────────────────┐                          ║
+║                          │       AETHERLINK CODENAME       │                          ║
+║                          └─────────────────────────────────┘                          ║
+║                                                                                       ║
+║     ┌─────────────────────────────────────────────────────────────────────────┐       ║
+║     │                                                                         │       ║
+║     │   🗄️ AETHER MEMORY          Deep persistent vector-based storage       │       ║
+║     │   ─────────────────────────────────────────────────────────────────    │       ║
+║     │   • Short-term    │  Current session context                          │       ║
+║     │   • Long-term     │  Persistent cross-session knowledge               │       ║
+║     │   • Episodic      │  Past analysis records                            │       ║
+║     │   • Semantic      │  Code pattern understanding                       │       ║
+║     │   • Working       │  Active processing buffer                         │       ║
+║     │                                                                         │       ║
+║     │   🧠 AETHER BRAIN           Strategic agentic decision engine          │       ║
+║     │   ─────────────────────────────────────────────────────────────────    │       ║
+║     │   • Repository analysis and size detection                            │       ║
+║     │   • Dynamic strategy selection (tiny → massive)                       │       ║
+║     │   • Multi-agent coordination and task assignment                      │       ║
+║     │   • Quality evaluation and iteration control                          │       ║
+║     │   • Learning from past analyses                                       │       ║
+║     │                                                                         │       ║
+║     │   🎭 SMART RALPH             Intelligent validation critic             │       ║
+║     │   ─────────────────────────────────────────────────────────────────    │       ║
+║     │   • Adaptive quality thresholds (0.40 - 0.90)                         │       ║
+║     │   • Multi-dimensional validation checks                               │       ║
+║     │   • Detailed criticism with actionable guidance                       │       ║
+║     │   • Feedback learning for threshold adjustment                        │       ║
+║     │   • Iteration control with max 3 loops                                │       ║
+║     │                                                                         │       ║
+║     └─────────────────────────────────────────────────────────────────────────┘       ║
+║                                                                                       ║
+║     ┌─────────────────────────────────────────────────────────────────────────┐       ║
+║     │                          SYSTEM METRICS                                 │       ║
+║     │                                                                         │       ║
+║     │   Memory Types:     5          │   Validation Checks:    7             │       ║
+║     │   Decision Types:   5          │   Max Iterations:       3             │       ║
+║     │   Agent Roles:      5          │   Threshold Range:   40-90%           │       ║
+║     │   Protocols:        4          │   Strategy Types:       5             │       ║
+║     │                                                                         │       ║
+║     └─────────────────────────────────────────────────────────────────────────┘       ║
+║                                                                                       ║
+╠═══════════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                       ║
+║                   🌌 "In the darkness of technical debt, NOVA brings light."          ║
+║                                                                                       ║
+║                              AETHERBOT v1.0.0 • NOVA v3.1.0                           ║
+║                                                                                       ║
+╚═══════════════════════════════════════════════════════════════════════════════════════╝
 ```
-    ____   ____  _       __ ______ ____   ______ ____     ____   __  __
-   / __ \ / __ \| |     / // ____// __ \ / ____// __ \   / __ ) / / / /
-  / /_/ // / / /| | /| / // __/  / /_/ // __/  / / / /  / __  |/ /_/ /
- / ____// /_/ / | |/ |/ // /___ / _, _// /___ / /_/ /  / /_/ // __  /
-/_/     \____/  |__/|__//_____//_/ |_|/_____//_____/  /_____//_/ /_/
-
-     ___    ______ ______ __  __ ______ ____   __     ____ _   __ __ __
-    /   |  / ____//_  __// / / // ____// __ \ / /    /  _// | / // //_/
-   / /| | / __/    / /  / /_/ // __/  / /_/ // /     / / /  |/ // ,<
-  / ___ |/ /___   / /  / __  // /___ / _, _// /___ _/ / / /|  // /| |
- /_/  |_/_____/  /_/  /_/ /_//_____//_/ |_|/_____//___//_/ |_//_/ |_|
-
-```
-
----
-
-**AETHERBOT**
-*Powered by AETHERLINK*
 
 ---
 
