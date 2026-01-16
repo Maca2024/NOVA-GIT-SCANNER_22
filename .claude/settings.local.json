@@ -1,0 +1,47 @@
+{
+  "project": {
+    "name": "NOVA-GIT-SCANNER_22",
+    "version": "3.1.0",
+    "codename": "AETHERLINK",
+    "description": "Forensic code auditor with AETHERBOT intelligent core"
+  },
+  "memory": {
+    "aetherbot_components": [
+      "AetherMemory - Deep persistent vector memory (5 types)",
+      "AetherBrain - Strategic decision engine",
+      "SmartRalphCritic - Intelligent validation (adaptive thresholds)"
+    ],
+    "scanners": [
+      "code_rot.py - Protocol A: Git history analysis",
+      "coder_guilt.py - Protocol B: TODO/FIXME/HACK detection",
+      "security.py - Protocol C: Secret/vulnerability scanning",
+      "performance.py - Protocol D: Complexity analysis"
+    ],
+    "key_files": {
+      "entry_point": "nova/cli.py",
+      "pipeline": "nova/agents/graph.py",
+      "brain": "nova/aetherbot/brain.py",
+      "memory": "nova/aetherbot/memory.py",
+      "ralph": "nova/aetherbot/ralph.py"
+    }
+  },
+  "commands": {
+    "quick_scan": "set PYTHONUTF8=1 && python -m nova.cli scan <path> --quick",
+    "full_scan": "set PYTHONUTF8=1 && python -m nova.cli scan <path>",
+    "run_example": "python run_kibana_scan.py"
+  },
+  "scans_completed": [
+    {
+      "target": "Kibana src/core",
+      "date": "2026-01-16",
+      "entropy_score": 67,
+      "severity": "Critical",
+      "lines_analyzed": 327642,
+      "report": "examples/KIBANA_AETHERBOT_SCAN.md"
+    }
+  ],
+  "owner": {
+    "github": "Maca2024",
+    "languages": ["Dutch", "English"]
+  }
+}
